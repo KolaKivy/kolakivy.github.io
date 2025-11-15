@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DQ-Net: Dynamic Quadruped Grasping</title>
 
-  <!-- Google Fonts（可选，不想用可以删掉这三行） -->
+  <!-- Google Fonts（可选） -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body>
 <div class="page">
 
-  <!-- 顶部 Hero 区 -->
+  <!-- 顶部 Hero -->
   <header class="hero">
     <div class="hero-bg"></div>
 
@@ -48,7 +48,9 @@
 
       <div class="hero-actions">
         <a class="btn primary" href="https://arxiv.org/pdf/2508.08328" target="_blank">📄 Paper (PDF)</a>
-        <a class="btn secondary" href="https://arxiv.org/abs/2508.08328" target="_blank">💻 arXiv Page</a>
+        <a class="btn secondary" href="https://arxiv.org/abs/2508.08328" target="_blank">💻 arXiv</a>
+        <!-- TODO: 把 href 换成你自己的代码仓库地址 -->
+        <a class="btn secondary" href="#" target="_blank">🧩 Code</a>
       </div>
 
       <div class="hero-meta">
@@ -68,7 +70,7 @@
   <!-- 主体内容 -->
   <main class="content">
 
-    <!-- 导航锚点小条（不想要可以整个删掉） -->
+    <!-- 顶部导航锚点 -->
     <nav class="section-nav">
       <a href="#abstract">Abstract</a>
       <a href="#benchmark">DQ-Bench</a>
@@ -146,17 +148,17 @@
       <div class="results-grid">
         <figure class="result-item">
           <img src="images/table_gsr.png" alt="Grasp Success Rate Table" class="img-elevated">
-          <figcaption>Grasp Success Rate (GSR) across difficulty levels.</figcaption>
+          <figcaption>Grasp Success Rate (GSR) across difficulty levels on DQ-Bench.</figcaption>
         </figure>
 
         <figure class="result-item">
           <img src="images/unseen_objects.png" alt="Unseen Objects Performance" class="img-elevated">
-          <figcaption>Generalization to unseen objects on DQ-Bench.</figcaption>
+          <figcaption>Generalization results on unseen YCB objects.</figcaption>
         </figure>
 
         <figure class="result-item wide">
           <img src="images/qualitative.png" alt="Qualitative Comparison" class="img-elevated">
-          <figcaption>Qualitative comparison between DQ-Net and baselines.</figcaption>
+          <figcaption>Qualitative comparison between DQ-Net and baseline methods.</figcaption>
         </figure>
       </div>
     </section>
@@ -184,7 +186,7 @@
       <pre class="code-block">
 @misc{liang2025wholebodycoordinationdynamicobject,
   title         = {Whole-Body Coordination for Dynamic Object Grasping with Legged Manipulators},
-  author        = {Qiwei Liang and Boyang Cai and Rongyi He and Hui Li and 
+  author        = {Qiwei Liang and Boyang Cai and Rongyi He and Hui Li and
                    Tao Teng and Haihan Duan and Changxin Huang and Runhao Zeng},
   year          = {2025},
   eprint        = {2508.08328},
