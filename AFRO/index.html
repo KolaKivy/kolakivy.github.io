@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFRO: Bootstrap Dynamic-Aware 3D Visual Representation</title>
+    <meta name="description" content="Project page for AFRO: Bootstrap Dynamic-Aware 3D Visual Representation for Scalable Robot Learning">
+    
+    <!-- Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #2563eb; /* Bright Blue */
+            --secondary-color: #1e40af; /* Darker Blue for hover */
+            --text-color: #1f2937; /* Dark Gray */
+            --light-gray: #f3f4f6;
+            --white: #ffffff;
+            --max-width: 1000px;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            color: var(--text-color);
+            background-color: var(--white);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .text-center { text-align: center; }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            margin-top: 3rem;
+            color: #111827;
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* Header Section */
+        header {
+            padding: 4rem 0 2rem;
+        }
+
+        h1.paper-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: -webkit-linear-gradient(45deg, #1e3a8a, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .authors {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .authors a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .authors a:hover { text-decoration: underline; }
+
+        .affiliations {
+            font-size: 0.95rem;
+            color: #4b5563;
+            margin-bottom: 2rem;
+        }
+
+        .affiliations span {
+            margin: 0 0.5rem;
+            display: inline-block;
+        }
+
+        /* Action Buttons */
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background-color: var(--text-color);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary { background-color: var(--primary-color); }
+        .btn-primary:hover { background-color: var(--secondary-color); transform: translateY(-2px); }
+        .btn-dark { background-color: #374151; }
+        .btn-dark:hover { background-color: #111827; transform: translateY(-2px); }
+
+        /* Images */
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            margin: 1.5rem 0;
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+            text-align: justify;
+        }
+
+        /* Abstract */
+        .abstract-box {
+            background-color: var(--light-gray);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: justify;
+        }
+
+        .abstract-text {
+            font-size: 1.05rem;
+        }
+
+        /* Method & Results */
+        .content-block {
+            margin-bottom: 2rem;
+        }
+
+        .content-block h3 {
+            font-size: 1.5rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .results-grid { grid-template-columns: 1fr; }
+            h1.paper-title { font-size: 1.8rem; }
+        }
+
+        /* BibTeX */
+        .bibtex-container {
+            background-color: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            text-align: left;
+        }
+
+        pre {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            color: #334155;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 4rem;
+            padding: 2rem 0;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="container text-center">
+        <h1 class="paper-title">Bootstrap Dynamic-Aware 3D Visual Representation <br>for Scalable Robot Learning</h1>
+        
+        <div class="authors">
+            <a href="#">Qiwei Liang</a><sup>1,2,*</sup>, 
+            <a href="#">Boyang Cai</a><sup>2,*</sup>, 
+            <a href="#">Minghao Lai</a><sup>2,*</sup>, 
+            <a href="#">Sitong Zhuang</a><sup>2,*</sup>, <br>
+            <a href="#">Tao Lin</a><sup>4</sup>,
+            <a href="#">Yan Qin</a><sup>2</sup>, 
+            <a href="#">Jiaming Liang</a><sup>2</sup>, 
+            <a href="#">Renjing Xu</a><sup>1,†</sup>, 
+            <a href="#">Yixuan Ye</a><sup>5</sup>
+        </div>
+
+        <div class="affiliations">
+            <span><sup>1</sup>HKUST (Guangzhou)</span>
+            <span><sup>2</sup>Shenzhen University</span>
+            <span><sup>4</sup>Beijing Jiaotong University</span>
+            <span><sup>5</sup>Central South University</span>
+            <br>
+            <span style="font-size: 0.85rem; margin-top: 0.5rem; display: block;">*Equal Contribution &nbsp;&nbsp; †Corresponding Author</span>
+        </div>
+
+        <div class="links">
+            <a href="#" class="btn btn-dark">
+                <!-- Icon placeholder -->
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                Paper (Arxiv)
+            </a>
+            <a href="#" class="btn btn-dark">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path></svg>
+                Code (GitHub)
+            </a>
+            <a href="#" class="btn btn-primary">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Video Demo
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Teaser Image -->
+        <div class="text-center">
+            <img src="images/teaser.png" alt="Teaser Figure showing AFRO Framework" class="img-fluid">
+            <p class="caption">
+                <strong>Figure 1:</strong> (a) The relationship between robot manipulation in real space and its abstraction in latent space. (b) Our framework (AFRO) learns dynamics-aware 3D visual features in latent space. (c) AFRO achieves higher success rates and stronger generalization than baseline methods in both simulation and real-world tasks.
+            </p>
+        </div>
+
+        <!-- Abstract -->
+        <section id="abstract">
+            <div class="text-center"><h2 class="section-title">Abstract</h2></div>
+            <div class="abstract-box">
+                <p class="abstract-text">
+                    Despite strong results on recognition and segmentation, current 3D visual pre-training methods often underperform on robotic manipulation. We attribute this gap to two factors: the lack of state-action-state dynamics modeling and the unnecessary redundancy of explicit geometric reconstruction. 
+                    <br><br>
+                    We introduce <strong>AFRO</strong>, a self-supervised framework that learns dynamics-aware 3D representations without action or reconstruction supervision. AFRO casts state prediction as a generative diffusion process and jointly models forward and inverse dynamics in a shared latent space to capture causal transition structure. To prevent feature leakage in action learning, we employ feature differencing and inverse-consistency supervision, improving the quality and stability of visual features. 
+                    <br><br>
+                    When combined with Diffusion Policy, AFRO substantially increases manipulation success rates across 16 simulated and 4 real-world tasks, outperforming existing pre-training approaches.
+                </p>
+            </div>
+        </section>
+
+        <!-- Method -->
+        <section id="method">
+            <div class="text-center"><h2 class="section-title">Methodology</h2></div>
+            
+            <div class="content-block">
+                <p>
+                    AFRO integrates inverse and forward dynamics models (IDM/FDM) to encode state-action-state transitions directly in a latent space. Unlike previous methods, we model future state uncertainties with a <strong>generative diffusion process</strong> while avoiding explicit reconstruction.
+                </p>
+                <img src="images/method_overview.png" alt="Method Overview Diagram" class="img-fluid">
+                <p class="caption">
+                    <strong>Figure 2: Overall Framework.</strong> (a) Predict Future: The IDM infers latent actions from feature differences. The FDM predicts future features using a diffusion process. (b) Predict History: We use inverse-consistency to predict historical states, stabilizing the representation.
+                </p>
+            </div>
+
+            <div class="results-grid">
+                <div>
+                    <h3>Key Innovation 1: Latent Action</h3>
+                    <p>
+                        We employ <strong>Feature Differencing</strong> to model changes in representation rather than the representations themselves. This prevents the model from "shortcutting" (memorizing states) and forces it to learn actual dynamics.
+                    </p>
+                </div>
+                <div>
+                    <h3>Key Innovation 2: Diffusion FDM</h3>
+                    <p>
+                        We formulate forward prediction as a conditional denoising process. This allows AFRO to capture the multimodal uncertainty of real-world interactions (one action might lead to multiple slightly different outcomes).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results -->
+        <section id="results">
+            <div class="text-center"><h2 class="section-title">Experiments & Results</h2></div>
+            
+            <div class="content-block">
+                <h3>Simulation Benchmarks</h3>
+                <p>We evaluated AFRO on 16 simulated tasks (MetaWorld & Adroit). AFRO consistently outperforms strong 2D/3D pretraining baselines (like CLIP, DINOv2, PointMAE, Dynamo-3D).</p>
+                <img src="images/results_simulation.png" alt="Simulation Results Table" class="img-fluid">
+                <p class="caption">
+                    <strong>Table 1 & Figure 5:</strong> AFRO achieves state-of-the-art success rates, particularly in challenging tasks requiring precise manipulation and temporal coordination.
+                </p>
+            </div>
+
+            <div class="content-block">
+                <h3>Real-World Performance</h3>
+                <p>We deployed AFRO on a Franka Emika robot arm for tasks including Bell Pressing, Block Alignment, and Fruit Pick-and-Place.</p>
+                <img src="images/real_world.png" alt="Real World Experiment Setup" class="img-fluid">
+                <p class="caption">
+                    <strong>Figure 8:</strong> (a) Robot setup and objects. (b) AFRO demonstrates robust transfer to physical hardware, effectively handling object variation and background clutter.
+                </p>
+            </div>
+        </section>
+
+        <!-- Citation -->
+        <section id="citation">
+            <div class="text-center"><h2 class="section-title">Citation</h2></div>
+            <p>If you find our work useful in your research, please consider citing:</p>
+            <div class="bibtex-container">
+<code>@article{liang2025afro,
+  title={Bootstrap Dynamic-Aware 3D Visual Representation for Scalable Robot Learning},
+  author={Liang, Qiwei and Cai, Boyang and Lai, Minghao and Zhuang, Sitong and Lin, Tao and Qin, Yan and Liang, Jiaming and Xu, Renjing and Ye, Yixuan},
+  journal={arXiv preprint},
+  year={2025}
+}</code>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>
+                Copyright © 2025 AFRO Project Team. <br>
+                Website template based on modern research standards.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
