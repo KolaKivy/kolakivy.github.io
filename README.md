@@ -1,22 +1,28 @@
+# kolakivy.github.io
 
-### Hi there 👋
+Personal homepage of Qiwei Liang. Plain static HTML, no build step (`.nojekyll` keeps GitHub Pages from running Jekyll).
 
-Personal Web: https://kolakivy.github.io
+```
+index.html            the homepage
+404.html
+assets/css/style.css
+assets/js/main.js     Guangzhou clock + figure lightbox
+assets/fonts/         self-hosted Newsreader and JetBrains Mono (latin subset)
+assets/img/           portrait, seal, favicons, social preview
+assets/papers/        one figure per paper (webp, ~2000px wide)
+AFRO/  DQ/            project pages
+```
 
-<!--
-**jinyeying/jinyeying** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Adding a paper
 
-Here are some ideas to get you started:
+1. Save the figure to `assets/papers/<name>.webp` (about 2000px wide is plenty).
+2. In `index.html`, copy one `<li class="paper">` block inside `<ol class="papers">`, then update the number, venue, title, authors, one-line summary, links, and figure.
+3. Use `class="venue is-pub"` for accepted papers and plain `class="venue"` for preprints.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Preview locally
 
+```
+python -m http.server 8000
+```
 
-![](https://komarev.com/ghpvc/?username=kolakivy&style=plastic&color=green)
+Then open http://localhost:8000.

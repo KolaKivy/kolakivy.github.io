@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qiwei Liang · 梁棋炜</title>
+  <meta name="description" content="Qiwei Liang (梁棋炜) is a Ph.D. student at HKUST (Guangzhou), advised by Prof. Renjing Xu, working on robot learning and embodied AI.">
+  <meta name="author" content="Qiwei Liang">
+  <meta name="theme-color" content="#f3efe7">
+  <link rel="canonical" href="https://kolakivy.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Qiwei Liang · 梁棋炜">
+  <meta property="og:description" content="Ph.D. student at HKUST (Guangzhou). Robot learning, embodied AI.">
+  <meta property="og:url" content="https://kolakivy.github.io/">
+  <meta property="og:image" content="https://kolakivy.github.io/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preload" href="assets/fonts/newsreader-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#work">Skip to work</a>
+
+  <header class="masthead wrap">
+    <a class="mark" href="#top" aria-label="Qiwei Liang, home">Qiwei Liang</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="clock">Guangzhou <time id="clock">--:--</time></p>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="name">
+      <div class="hero-text">
+        <p class="kicker"><span lang="zh-CN">梁棋炜</span><span class="sep">/</span>Ph.D. Student</p>
+        <h1 id="name" class="name">Qiwei<br>Liang</h1>
+        <p class="lede">
+          I am a Ph.D. student at
+          <a href="https://www.hkust-gz.edu.cn/" target="_blank" rel="noopener">HKUST (Guangzhou)</a>,
+          advised by
+          <a href="https://scholar.google.com/citations?user=Mu__bJEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Renjing Xu</a>.
+          Before that, I received my B.Eng. in Robotics Engineering from
+          <a href="https://www.szu.edu.cn/" target="_blank" rel="noopener">Shenzhen University</a>.
+        </p>
+        <p class="interests">
+          <span>Robot learning</span>
+          <span>Manipulation</span>
+          <span>3D representation</span>
+          <span>Whole-body control</span>
+        </p>
+      </div>
+
+      <figure class="portrait">
+        <div class="portrait-frame">
+          <img src="assets/img/portrait.jpg" width="720" height="900" alt="Portrait of Qiwei Liang">
+          <img class="seal" src="assets/img/seal.png" width="360" height="360" alt="" aria-hidden="true">
+        </div>
+        <figcaption><span>Fig. 0</span>The author.</figcaption>
+      </figure>
+    </section>
+
+    <section id="work" class="work wrap" aria-labelledby="work-title">
+      <header class="section-head">
+        <h2 id="work-title">Selected Work</h2>
+        <p>
+          <a href="https://scholar.google.com.sg/citations?user=1W24GsQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Full list on Google Scholar</a>
+        </p>
+      </header>
+
+      <!--
+        To add a paper: copy one <li class="paper"> block, put the figure in
+        assets/papers/, and bump the number. Newest or most important first.
+      -->
+      <ol class="papers">
+        <li class="paper">
+          <div class="paper-meta">
+            <span class="paper-no">01</span>
+            <span class="venue">Preprint · 2025</span>
+            <span class="alias">AFRO</span>
+          </div>
+          <div class="paper-body">
+            <h3 class="paper-title">
+              <a href="AFRO/">Bootstrap Dynamic-Aware 3D Visual Representation for Scalable Robot Learning</a>
+            </h3>
+            <p class="authors"><b class="me">Qiwei Liang</b>, Boyang Cai, Minghao Lai, Sitong Zhuang, Tao Lin, Yan Qin, Yixuan Ye, Jiaming Liang, Renjing Xu</p>
+            <p class="gist">Self-supervised pre-training that learns dynamics-aware 3D visual representations from action-free data, through latent inverse dynamics and feature diffusion, so that robot policies scale with unlabeled demonstrations.</p>
+            <p class="links">
+              <a href="https://arxiv.org/abs/2512.00074" target="_blank" rel="noopener">Paper</a>
+              <a href="AFRO/">Project</a>
+              <a href="https://github.com/KolaKivy/AFRO" target="_blank" rel="noopener">Code</a>
+            </p>
+            <figure class="plate">
+              <button class="plate-img" type="button" data-zoom aria-label="Enlarge figure 1">
+                <img src="assets/papers/afro.webp" width="2000" height="723" loading="lazy" alt="AFRO overview: latent action between feature and real space, the dynamic encoder with feature diffusion, and benchmark results.">
+              </button>
+              <figcaption><span>Fig. 1</span>Dynamics learned in latent space, and where it lands on MetaWorld, Adroit and real robots.</figcaption>
+            </figure>
+          </div>
+        </li>
+
+        <li class="paper">
+          <div class="paper-meta">
+            <span class="paper-no">02</span>
+            <span class="venue is-pub">AAAI 2026</span>
+            <span class="alias">DQ-Bench · DQ-Net</span>
+          </div>
+          <div class="paper-body">
+            <h3 class="paper-title">
+              <a href="DQ/">Whole-Body Coordination for Dynamic Object Grasping with Legged Manipulators</a>
+            </h3>
+            <p class="authors"><b class="me">Qiwei Liang</b>, Boyang Cai, Rongyi He, Hui Li, Tao Teng, Haihan Duan, Changxin Huang, Runhao Zeng</p>
+            <p class="gist">DQ-Bench, a benchmark for grasping moving objects with a quadruped manipulator, and DQ-Net, a teacher–student policy that coordinates legs and arm to grasp objects in motion.</p>
+            <p class="links">
+              <a href="https://arxiv.org/abs/2508.08328" target="_blank" rel="noopener">Paper</a>
+              <a href="DQ/">Project</a>
+              <a href="https://github.com/YoungYNG/DQ_WBC" target="_blank" rel="noopener">Code</a>
+            </p>
+            <figure class="plate">
+              <button class="plate-img" type="button" data-zoom aria-label="Enlarge figure 2">
+                <img src="assets/papers/dq.webp" width="2000" height="888" loading="lazy" alt="DQ-Bench: random heights, rough terrain, seen and unseen objects, and four levels of trajectory difficulty.">
+              </button>
+              <figcaption><span>Fig. 2</span>Four levels of moving targets, from slow straight lines to fast 3D trajectories.</figcaption>
+            </figure>
+          </div>
+        </li>
+
+        <li class="paper">
+          <div class="paper-meta">
+            <span class="paper-no">03</span>
+            <span class="venue">Preprint · 2026</span>
+            <span class="alias">RoboNVS</span>
+          </div>
+          <div class="paper-body">
+            <h3 class="paper-title">
+              <a href="https://youngyng.github.io/RoboNVS.github.io/" target="_blank" rel="noopener">Beyond Viewpoint Generalization: What Multi-View Demonstrations Offer and How to Synthesize Them for Robot Manipulation?</a>
+            </h3>
+            <p class="authors">Boyang Cai*, <b class="me">Qiwei Liang*</b>, Jiawei Li*, Shihang Weng*, Zhaoxin Zhang*, Tao Lin, Xiangyu Chen, Wenjie Zhang, Jiaqi Mao, Weisheng Xu, Bin Yang, Jiaming Liang, Junhao Cai, Renjing Xu</p>
+            <p class="gist">A controlled study of what multi-view demonstrations give a policy beyond viewpoint robustness, and RoboNVS, a geometry-aware framework that synthesizes novel-view videos from a single monocular demonstration.</p>
+            <p class="links">
+              <a href="https://arxiv.org/abs/2603.26757" target="_blank" rel="noopener">Paper</a>
+              <a href="https://youngyng.github.io/RoboNVS.github.io/" target="_blank" rel="noopener">Project</a>
+              <a href="https://github.com/YoungYNG/RoboNVS" target="_blank" rel="noopener">Code</a>
+            </p>
+            <figure class="plate">
+              <button class="plate-img" type="button" data-zoom aria-label="Enlarge figure 3">
+                <img src="assets/papers/robonvs.webp" width="2000" height="730" loading="lazy" alt="RoboNVS pipeline: depth estimation and alignment, mesh rendering, bi-directional masking, and video diffusion completion.">
+              </button>
+              <figcaption><span>Fig. 3</span>Reconstruct, re-render from a new camera, then let video diffusion fill what the source never saw.</figcaption>
+            </figure>
+          </div>
+        </li>
+
+        <li class="paper">
+          <div class="paper-meta">
+            <span class="paper-no">04</span>
+            <span class="venue">Preprint · 2026</span>
+            <span class="alias">AEM</span>
+          </div>
+          <div class="paper-body">
+            <h3 class="paper-title">
+              <a href="https://dongqiuyijing.github.io/AEM-Research-Homepage-latest/" target="_blank" rel="noopener">Action-Effect Memory Pretraining for Robot Manipulation</a>
+            </h3>
+            <p class="authors">Yijing Zhou, <b class="me">Qiwei Liang</b>, Sitong Zhuang, Jiaxi Li, Xianpeng Wang, Boyang Cai, Yunyang Mo, Renjing Xu</p>
+            <p class="gist">Masked modeling over interleaved vision–action histories compresses what past actions did to the scene into a single memory token, giving visuomotor policies history awareness at almost no inference cost.</p>
+            <p class="links">
+              <a href="https://arxiv.org/abs/2606.12499" target="_blank" rel="noopener">Paper</a>
+              <a href="https://dongqiuyijing.github.io/AEM-Research-Homepage-latest/" target="_blank" rel="noopener">Project</a>
+            </p>
+            <figure class="plate">
+              <button class="plate-img" type="button" data-zoom aria-label="Enlarge figure 4">
+                <img src="assets/papers/aem.webp" width="1286" height="860" loading="lazy" alt="Comparison between a previous visuomotor policy and the memory-aware policy with a pretrained AEM encoder and one memory token.">
+              </button>
+              <figcaption><span>Fig. 4</span>From a single frame to one token of memory.</figcaption>
+            </figure>
+          </div>
+        </li>
+      </ol>
+
+      <p class="footnote">* Equal contribution.</p>
+    </section>
+
+    <section id="contact" class="contact wrap" aria-labelledby="contact-title">
+      <header class="section-head">
+        <h2 id="contact-title">Contact</h2>
+        <p>Happy to talk about robots.</p>
+      </header>
+      <a class="email" href="mailto:kola337599@gmail.com">kola337599@gmail.com</a>
+      <ul class="elsewhere">
+        <li><a href="https://scholar.google.com.sg/citations?user=1W24GsQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://github.com/KolaKivy" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="colophon wrap">
+    <span>© 2026 Qiwei Liang</span>
+    <span>Set in Newsreader &amp; JetBrains Mono</span>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Enlarged figure">
+    <img src="" alt="">
+  </dialog>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
