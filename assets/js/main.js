@@ -1,16 +1,9 @@
 (() => {
-  const clock = document.getElementById("clock");
-  if (clock) {
-    const fmt = new Intl.DateTimeFormat("en-GB", {
-      timeZone: "Asia/Shanghai",
-      hour: "2-digit",
-      minute: "2-digit",
-    });
-    const tick = () => {
-      clock.textContent = fmt.format(new Date());
-    };
-    tick();
-    setInterval(tick, 15000);
+  const bar = document.querySelector(".topbar");
+  if (bar) {
+    const onScroll = () => bar.classList.toggle("is-scrolled", window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
   }
 
   const box = document.querySelector(".lightbox");
