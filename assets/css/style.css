@@ -25,7 +25,7 @@
   --accent-soft: #fff1e6;
 
   --font: "Figtree", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
-  --wrap: 60rem;
+  --wrap: 63rem;
 }
 
 *,
@@ -44,7 +44,7 @@ body {
   background: #fff;
   color: var(--ink);
   font-family: var(--font);
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
@@ -99,7 +99,7 @@ a:hover { text-decoration: underline; text-underline-offset: .18em; }
   gap: .6rem;
   color: var(--ink);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.08rem;
 }
 .brand:hover { text-decoration: none; }
 .brand img { width: 1.6rem; height: 1.6rem; }
@@ -110,7 +110,7 @@ a:hover { text-decoration: underline; text-underline-offset: .18em; }
 }
 .nav a {
   color: var(--ink-2);
-  font-size: .95rem;
+  font-size: 1.02rem;
   font-weight: 500;
 }
 .nav a:hover { color: var(--ink); text-decoration: none; }
@@ -125,7 +125,7 @@ a:hover { text-decoration: underline; text-underline-offset: .18em; }
 
 .hero-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 17rem;
+  grid-template-columns: minmax(0, 1fr) 18.5rem;
   gap: 3.5rem;
   align-items: center;
   padding-top: 4rem;
@@ -134,7 +134,7 @@ a:hover { text-decoration: underline; text-underline-offset: .18em; }
 
 h1 {
   margin: 0 0 1.25rem;
-  font-size: clamp(2.5rem, 5.5vw, 3.6rem);
+  font-size: clamp(2.6rem, 5.8vw, 3.9rem);
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -.035em;
@@ -162,7 +162,7 @@ h1 .zh {
   border-left: 0;
 }
 .roles dt {
-  font-size: .72rem;
+  font-size: .76rem;
   font-weight: 600;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -170,13 +170,13 @@ h1 .zh {
 }
 .roles dd {
   margin: .1rem 0 0;
-  font-size: .95rem;
+  font-size: 1.02rem;
   font-weight: 600;
 }
 .roles dd a { color: var(--ink); }
 
 .bio {
-  max-width: 36rem;
+  max-width: 38rem;
   margin: 0 0 1rem;
   color: var(--ink-2);
 }
@@ -199,7 +199,7 @@ h1 .zh {
   border-radius: 999px;
   background: #fff;
   color: var(--ink);
-  font-size: .9rem;
+  font-size: .98rem;
   font-weight: 500;
   transition: border-color .2s, background .2s;
 }
@@ -230,7 +230,7 @@ h1 .zh {
 
 h2 {
   margin: 0 0 1.5rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -.03em;
@@ -245,7 +245,7 @@ h2 {
   margin-bottom: 1.5rem;
 }
 .section-head h2 { margin: 0; }
-.more { font-size: .95rem; font-weight: 500; }
+.more { font-size: 1rem; font-weight: 500; }
 
 /* ---------- Education ---------- */
 
@@ -264,7 +264,7 @@ h2 {
 }
 .row h3 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.4;
 }
@@ -273,14 +273,14 @@ h2 {
 .row p {
   margin: .15rem 0 0;
   color: var(--ink-2);
-  font-size: .98rem;
+  font-size: 1.05rem;
 }
 .row-side {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   flex: none;
-  font-size: .9rem;
+  font-size: .98rem;
   color: var(--muted);
   text-align: right;
 }
@@ -301,7 +301,7 @@ h2 {
 
 .pub {
   display: grid;
-  grid-template-columns: 17rem minmax(0, 1fr);
+  grid-template-columns: 18rem minmax(0, 1fr);
   gap: 1.75rem;
   align-items: start;
   padding: 1.75rem 0;
@@ -332,7 +332,7 @@ h2 {
 
 .pub-body h3 {
   margin: 0 0 .45rem;
-  font-size: 1.12rem;
+  font-size: 1.22rem;
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: -.01em;
@@ -342,7 +342,7 @@ h2 {
 
 .authors {
   margin: 0 0 .45rem;
-  font-size: .95rem;
+  font-size: 1.02rem;
   line-height: 1.6;
   color: var(--ink-2);
 }
@@ -360,7 +360,7 @@ h2 {
   align-items: center;
   gap: .6rem;
   margin: 0 0 .6rem;
-  font-size: .92rem;
+  font-size: .98rem;
   color: var(--muted);
 }
 .badge {
@@ -368,7 +368,7 @@ h2 {
   border-radius: 6px;
   background: #f1f0ee;
   color: var(--ink-2);
-  font-size: .8rem;
+  font-size: .85rem;
   font-weight: 700;
 }
 .badge-pub {
@@ -381,13 +381,13 @@ h2 {
   flex-wrap: wrap;
   gap: .3rem 1.1rem;
   margin: 0;
-  font-size: .92rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .note {
   margin: 1rem 0 0;
-  font-size: .88rem;
+  font-size: .94rem;
   color: var(--muted);
 }
 
@@ -395,7 +395,7 @@ h2 {
 
 .footer {
   border-top: 1px solid var(--line);
-  font-size: .88rem;
+  font-size: .94rem;
   color: var(--muted);
 }
 .footer-inner {
